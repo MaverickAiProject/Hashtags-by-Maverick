@@ -1,0 +1,83 @@
+/* Navbar */
+.navbar {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.navbar .nav-logo {
+    width: max(8vw, 150px);
+}
+
+/* Desktop Menu */
+.navbar .nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    font-family: var(--outfit);
+    cursor: pointer;
+    transition: 0.6s;
+    font-weight: 400;
+}
+
+.nav-links li:hover {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+/* Mobile Menu Icon (Hamburger) */
+.nav-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Hide the default menu on mobile */
+    .navbar {
+        padding: 30px 10px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 80px;
+        right: 30px;
+        background-color: #fff;
+        padding: 20px;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    /* Show the menu when it's open */
+    .navbar .nav-links.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Mobile menu icon (Hamburger) */
+    .nav-icon {
+        display: block;
+    }
+}

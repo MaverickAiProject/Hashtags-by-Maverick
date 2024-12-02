@@ -1,0 +1,144 @@
+/* Default styles */
+.grow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    font-family: var(--outfit);
+    margin: 100px 0;
+}
+
+.grow-heading-main {
+    font-family: var(--luckiest-guy);
+    font-size: max(3.5vw, 20px);
+    color: var(--main-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-shadow: rgba(4, 4, 4, 0.491) 1.95px 1.95px 2.6px;
+    margin-bottom: 20px;
+}
+
+.grow-heading-sub {
+    color: gray;
+    font-size: max(1.5vw, 15px);
+    margin-bottom: 20px;
+}
+
+.grow-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: max(3vw, 5px);
+    align-items: center;
+    justify-content: center;
+}
+
+.grow-card {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.grow-card:hover {
+    color: var(--main-color);
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+.grow-card-img {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.grow-card img {
+    width: max(12vw, 150px);
+}
+
+.grow-card p {
+    width: 60%;
+}
+
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 400px) {
+    .grow-card {
+        width: 45% !important;
+        height: 180px; 
+    }
+    .grow-card img {
+        width: 35vw !important;
+    }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .grow {
+        margin: 50px 0;
+        padding: 0 10px;
+    }
+
+    .grow-heading-main {
+        font-size: 24px; /* Reduced size for mobile */
+    }
+
+    .grow-heading-sub {
+        font-size: 14px;
+    }
+
+    .grow-services {
+        text-align: center;
+        gap: 5px;
+    }
+
+    .grow-card {
+        width: 30% ;
+        height: 180px; 
+    }
+
+    .grow-card img {
+        width: 15vw;
+    }
+
+    .grow-card p {
+        width: 90%;
+    }
+}
+
+/* Tablets (portrait) */
+@media (max-width: 1024px) {
+    .grow-heading-main {
+        font-size: 28px;
+    }
+
+    .grow-heading-sub {
+        font-size: 16px;
+    }
+
+    .grow-services {
+        gap: 20px;
+    }
+
+    .grow-card {
+        width: 25%;
+    } 
+}
+
+/* Large Devices (Desktop) */
+@media (min-width: 1200px) {
+    .grow-card {
+        width: 18%; /* Slightly smaller cards for larger screens */
+    }
+}

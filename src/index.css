@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body,html{
+  height: 100%;
+  width: 100%;
+}
+
+:root{
+  --satisfy:"Satisfy", cursive;
+  --outfit: "Outfit", sans-serif;
+  --inter: "Inter", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --luckiest-guy: "Luckiest Guy", cursive;
+  --main-color: #a70941;
+  --main-color-dark: #9b0a3d;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
