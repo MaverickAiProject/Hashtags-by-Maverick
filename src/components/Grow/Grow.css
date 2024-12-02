@@ -72,7 +72,7 @@
 
 /* Media Queries for responsiveness */
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .grow-card {
         width: 45% !important;
         height: 180px; 

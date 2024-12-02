@@ -91,7 +91,7 @@
 @media (max-width: 700px) {
     .AI-Section{
         padding: 15px;
-        margin: 50px 0;
+        margin: 60px 0;
     }
     .AI-Section h1{
         font-size: max(5vw, 20px);
@@ -105,7 +105,4 @@
     .AI-Section-text{
         width: 100%;
     }
-    /* .AI-Section-text div button{
-        width: 20%;
-    } */
 }

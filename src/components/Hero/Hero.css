@@ -17,7 +17,7 @@
 
 .hero-text-1{
     font-family: var(--satisfy);
-    font-size: max(4.5vw, 25px);
+    font-size: max(4.5vw, 32px);
 }
 
 .hero-text-1 span{
@@ -26,13 +26,13 @@
 
 .hero-text-2{
     font-family: var(--satisfy);
-    font-size: max(3vw, 15px);
+    font-size: max(3vw, 20px);
 
 }
 
 .hero-text-3{
     font-family: var(--luckiest-guy);
-    font-size: max(5vw, 25px);
+    font-size: max(5vw, 32px);
 
     color: var(--main-color);
     -webkit-text-stroke-width: 1px;
@@ -51,7 +51,7 @@
 
 @media (max-width: 600px) {
     .hero-section{
-        gap: 20px;
+        gap: 40px;
         margin-top: 20px;
     }
     .hero-section{
